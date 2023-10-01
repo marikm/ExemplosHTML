@@ -1,0 +1,99 @@
+/*documentacao Mdn  HTML */
+body{
+    background-color: #000000;
+    overflow: hidden; /* Tirar barra de rolagem */
+}
+
+main::after {/*pseudoelemento, nao está no html, inserido pelo css*/
+    content: "";
+    position: fixed;
+    top:0;
+    min-height: 100vh;
+    width: 80vh;
+    background: linear-gradient(-233deg, black 40%, rgba(0,0,0,0) 65%)no-repeat;
+}
+
+main .personagem{
+    display: none;
+    height: 100vh;/*para a div do texto e imagem ocupar altura de toda a pagina */
+}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*cobrir toda pagina sem perder esticar*/
+}
+
+.conteudo{
+    position: absolute; /*colocar na camada de cima de tudo */
+    top:0; /*vai para topo da pagina */
+    left: 120px; /*espaçamento */
+
+    display: flex;/*utilizando flex */
+    flex-direction: column;/*row vem como padrão*/
+    justify-content: center;/*para centralizar elemento precisa ter um espaço dentro dele*/
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;/*prioridade no plano z, como nao tem nenhum ele é a prioridade */
+
+}
+
+.conteudo .nome-personagem{
+
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+    color:#FFFFFF;
+    font-family: 'rubik';
+    line-height: 24px; /*altura entre as linhas */
+}
+
+.conteudo .logo{
+    background-image: url("../imagens/one-piece-logo.png");/* ../ ta voltando uma pasta*/
+    /*agora vamos inserir a imagem de fundo */
+    background-size: cover;/*propriedade */
+    width: 230px;
+    height: 100px;
+    margin-bottom: 35px;
+}
+
+.botoes{
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: rgba(0,0,0,0.3); /*definindo opacidade */
+    /*para centralizar os elementos por passos */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*dar altura */
+    width: 180px;
+    justify-content: center;/*centralizar */
+    align-items: center;
+    gap: 10px; /*espaço entre os botoes */
+
+}
+
+.botoes .botao{
+    border: none;
+    background: #000000;
+    cursor: pointer; /*quando passa com o mouse fica com a maozinha */
+    border-radius: 50%
+}
+
+.botoes .botao img{
+    border-radius: 50% /*arredondar botão*/
+}
+
+.botoes .botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
