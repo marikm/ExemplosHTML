@@ -1,0 +1,53 @@
+label{
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-weight: 550;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+}
+div{
+    margin-top: 1em;
+    text-align: center;
+}
+
+input{
+    display: inline-block;
+    padding-left: 10px;
+    text-align: center; 
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(234, 233, 233, 0.263);
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+
+}
+    
+
+
+h1{
+   font-size: 42px;
+   line-height:50px;
+   font-weight: 700; 
+   color:rgb(0,51,198);
+   margin:24px 100px 40px;
+   font-family: Nunito, Arial, Helvetica, sans-serif;
+   text-align: left;
+}
+
+h2{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Nunito, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-family: Nunito, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
