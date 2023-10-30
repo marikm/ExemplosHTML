@@ -3,37 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fomulario.css">
     <title>Cadastro Cliente | EMPPRESA</title>
 </head>
 <body>
-    <h2>Cadastro</h2><br>
-    <h3>Preencha os campos abaixo: </h3>
-    <form action="cadastro_ok.html" method="post">
-        <div> 
-            <label for="nome">Nome: </label><br>
-            <input type="text" id="nome"/>
+    <div class="pagina-de-cadastro">
+        <div class="titulo-pagina">
+        <img class = "imagem" src="./img/pet.png" alt="imagem_animais">
+            <div class="faca-seu-cadastro">
+                <div>Faca</div> 
+                <div>seu</div> 
+                <div>Cadastro</div><br>
+            </div>
         </div>
-        <div>
-            <label for="idade">Idade: </label><br>
-            <input type="text" id="idade"/>
+        <div class="formulario">
+            <h3>Entre com seus dados</h3>
+            <div class="campos-formulario">
+                <form action="cadastro_ok.html" method="post">
+                    <div> 
+                        <label for="nome-pet">Nome do pet: </label><br>
+                        <input type="text" id="nome-pet"/>
+                    </div>
+                    <div>
+                        <label for="raca">Raça: </label><br>
+                        <input type="text" id="raca"/>
+                    </div>
+                    <div>
+                        <label for="data-nasc">Data nascimento: </label><br>
+                        <input type="date" id="data-nasc"/>
+                    </div>            
+                    <div>
+                        <label for="cor">Cor: </label><br>
+                        <input type="text" id="cor"/>
+                    </div>
+                    <div>
+                        <label for="nome-dono">Nome do dono: </label><br>
+                        <input type="text" id="nome-dono"/>
+                    </div>
+                    <div class="button">
+                        <br>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <label for="endereco">Endereco: </label><br>
-            <input type="text" id="endereco"/>
+
+
         </div>
-        <div>
-            <label for="numero-casa">N°: </label><br>
-            <input type="text" id="numero-casa"/>
-        </div>
-        <div>
-            <label for="profissão">Profissão: </label><br>
-            <input type="text" id="profissao"/>
-        </div>
-        <div class="button">
-            <br>
-            <button type="submit"> Finalizar Cadastro </button>
-        </div>
-    </form>
+        
+    
 
 </body>
 </html>

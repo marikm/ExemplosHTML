@@ -1,0 +1,74 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden; 
+}
+
+.pagina-de-cadastro{
+    display: flex;
+    background-color: rgb(243, 233, 234)
+}
+.pagina-de-cadastro .imagem{
+    height: 100%;
+    width: 100%;
+}
+.titulo-pagina .faca-seu-cadastro{
+    position: absolute; /*colocar na camada de cima de tudo */
+    font-size: 58px;
+    top:0; /*vai para topo da pagina */
+    left: 200px; /*espaçamento */
+
+    display: flex;/*utilizando flex */
+    flex-direction: column;/*row vem como padrão*/
+    justify-content: center;/*para centralizar elemento precisa ter um espaço dentro dele*/
+    min-height: 100vh;
+    max-width: 380px;
+}
+
+.formulario{
+    top:20px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.formulario h3{
+    font-size: 40px;
+}
+.formulario .campos-formulario{
+    right: 0;
+    display: flex;
+    width: 690px;
+    height: 575px;
+    flex-direction: row;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+@media(max-width: 1023px){
+
+    .titulo-pagina .faca-seu-cadastro{
+        left: 150px;
+        min-height: 500px;
+        width: 500px;
+        justify-content: center;
+
+    }
+
+    .pagina-de-cadastro .imagem{
+        height: 500px;
+        width: 500px ;
+        justify-content: center;    
+    }
+
+    .pagina-de-cadastro{
+        display: flex;
+        flex-direction: column;
+    }
+    .compos-formulario{
+        top: 0;
+        width: 200px;
+        height: 500px;
+    }
+
+}
