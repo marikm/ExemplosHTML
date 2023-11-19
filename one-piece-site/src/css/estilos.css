@@ -29,15 +29,15 @@ main .personagem .imagem{
 }
 
 .conteudo{
-    position: absolute; /*colocar na camada de cima de tudo */
-    top:0; /*vai para topo da pagina */
-    left: 120px; /*espaçamento */
+        position: absolute; /*colocar na camada de cima de tudo */
+        top:0; /*vai para topo da pagina */
+        left: 120px; /*espaçamento */
 
-    display: flex;/*utilizando flex */
-    flex-direction: column;/*row vem como padrão*/
-    justify-content: center;/*para centralizar elemento precisa ter um espaço dentro dele*/
-    min-height: 100vh;
-    max-width: 380px;
+        display: flex;/*utilizando flex */
+        flex-direction: column;/*row vem como padrão*/
+        justify-content: center;/*para centralizar elemento precisa ter um espaço dentro dele*/
+        min-height: 100vh;
+        max-width: 380px;
     z-index: 1;/*prioridade no plano z, como nao tem nenhum ele é a prioridade */
 
 }

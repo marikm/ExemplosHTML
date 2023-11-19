@@ -1,0 +1,124 @@
+body{
+    font-family: "Cute Font";
+    overflow-x: hidden; 
+}
+
+.pagina-de-cadastro{
+    display: flex;
+    flex-wrap:wrap;
+}
+.pagina-de-cadastro .imagem{
+    flex: 1 1 100px;   
+}
+.titulo-pagina .faca-seu-cadastro{
+    position: absolute; /*colocar na camada de cima de tudo */
+    font-size: 58px;
+    left: 200px; /*espaçamento */
+    top: 200px;
+    display: flex;/*utilizando flex */
+    flex-direction: column;/*row vem como padrão*/
+    justify-content: center;/*para centralizar elemento precisa ter um espaço dentro dele*/
+    width: 386.709px;
+    height: 70.311px;
+}
+
+.formulario{
+    top:20px;
+    display: flex;
+    flex: 2 1 300px;
+    flex-direction: column;
+    height: 350px;
+    margin-left: 80px;
+}
+.formulario h3{
+    font-size: 40px;
+}
+.formulario .campos-formulario{
+    display: flex;
+    flex: 2 1 400px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+}
+.formulario .campos-formulario input{
+    width: 350px;
+    height: 35.155px;
+    border-radius: 12.784px;
+    background-color: #FFD5D5;
+}
+
+button{
+    background-color: #FFD5D5;
+    border-radius: 12.784px;
+    box-shadow: 0px 6.39188px 6.39188px 0px rgba(0, 0, 0, 0.25);
+    grid: 10px;
+    width: 225.314px;
+    height: 84.692px;
+    flex-shrink: 0;
+    font-size: 51.135px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: Cute Font;
+    margin: auto;
+}
+.button{
+width: 340px;
+height: 150px;
+display: flex;
+justify-content: center;
+
+}
+
+@media(max-width: 1023px){
+
+    .titulo-pagina .faca-seu-cadastro{
+        top: 120px;
+        left: 150px;
+        min-height: 300px;
+        width: 500px;
+
+    }
+
+    .pagina-de-cadastro .imagem{
+        height: 400px;
+        width: 450px ;
+        justify-content: center;    
+    }
+
+    .pagina-de-cadastro{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario{
+        margin-left: 40px;
+    }
+    .compos-formulario{
+        width: 200px;
+        height: 500px;
+    }
+    .button{
+        width: 300px;
+        height: 150px;
+        display: flex;
+        justify-content: center;  
+    }
+    .formulario .campos-formulario input{
+        width: 300px;
+        height: 30px;}
+
+}
+@media(max-width: 689px){
+    .titulo-pagina .faca-seu-cadastro{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+        height: 100px;
+        width: 200px;
+        justify-content: center;
+        left: 150px;
+        top: 0;
+
+    } 
+
+}

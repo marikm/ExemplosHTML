@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fomulario.css">
-    <title>Cadastro Cliente | EMPPRESA</title>
+    <title>Cadastro Cliente | EMPRESA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Inter:wght@500;600&family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="pagina-de-cadastro">
@@ -18,11 +21,11 @@
             </div>
         </div>
         <div class="formulario">
-            <h3>Entre com seus dados</h3>
+            <h3>Preencha os campos solicitados</h3>
             <div class="campos-formulario">
                 <form action="cadastro_ok.html" method="post">
-                    <div> 
-                        <label for="nome-pet">Nome do pet: </label><br>
+                    <div class="row"> 
+                        <label for="nome-pet">Nome do pet: </label>
                         <input type="text" id="nome-pet"/>
                     </div>
                     <div>
@@ -30,7 +33,7 @@
                         <input type="text" id="raca"/>
                     </div>
                     <div>
-                        <label for="data-nasc">Data nascimento: </label><br>
+                        <label for="data-nasc">Data nascimento: </label>
                         <input type="date" id="data-nasc"/>
                     </div>            
                     <div>
@@ -38,7 +41,7 @@
                         <input type="text" id="cor"/>
                     </div>
                     <div>
-                        <label for="nome-dono">Nome do dono: </label><br>
+                        <label for="nome-dono">Nome do dono: </label>
                         <input type="text" id="nome-dono"/>
                     </div>
                     <div class="button">
@@ -48,11 +51,14 @@
                 </form>
             </div>
         </div>
-
-
         </div>
         
     
 
 </body>
 </html>
+<!-- olhar no site aula de hoje a pasta script arquivo login fatec, olhar o css,
+no meu codigo criar para cada campo a classe "row, 
+1- definir mais de uma fonte para o arquivo
+2- tirar redundancia no meta 
+3- tomar cuidado com o hidden" -->
